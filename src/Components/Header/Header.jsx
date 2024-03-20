@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
@@ -12,9 +12,11 @@ const Header = () => {
 
                 {/* Anchor tag use korle page load dekhai, kinto Link use korle tokhon r load dekhabe na */}
                 <Link to="/">Home</Link>
-                <Link to="/users">Users</Link>
-                <Link to="/users">Users</Link>
-                <Link to="/posts">Posts</Link>
+                <NavLink to="/users">Users</NavLink>
+
+                {/* <Link to="/users">Users</Link> */}
+                {/* <Link to="/posts">Posts</Link> */}
+                <NavLink to="/posts">Posts</NavLink>
                 <Link to="/contact">Contact</Link>
             </nav>
         </div>
